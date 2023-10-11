@@ -1,0 +1,170 @@
+.notif {
+  display: flex;
+  gap: 13px;
+  width: 343px;
+  margin-bottom: 10px;
+}
+
+/* if message is unread */
+.unread {
+  border-radius: 8px;
+  background: #F7FAFD;
+}
+
+.oval {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #F65552;
+}
+
+/* profile pictures */
+.pfp {
+  width: 39px;
+  height: 39px;
+  border-radius: 39px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin: 16px 0 0 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: 16px 0;
+}
+
+.cont {
+  display: flex;
+}
+
+.cont span {
+  margin-right: 6px;
+}
+
+.name {
+  color: #1C202B;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.name:hover,
+.post:hover {
+  color: #0A327B;
+  cursor: pointer;
+}
+
+.text {
+  color: #5E6778;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* different types */
+.post {
+  color: #5E6778;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.group {
+  color: #0A327B;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.group:hover {
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 12px;
+  width: 263px;
+  height: 122px;
+  border-radius: 5px;
+  border: 1px solid #DDE7EE;
+  background: #FFF;
+  padding: 16px;
+  color: #5E6778;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.message:hover {
+  cursor: pointer;
+  border: 1px solid #DDE7EE;
+  background: #E5EFFA;
+}
+
+/* img type */
+.ig {
+  width: 39px;
+  height: 39px;
+}
+
+.notif-img {
+  width: 39px;
+  height: 39px;
+  border-radius: 7px;
+}
+
+.notif-img:hover {
+  cursor: pointer;
+}
+
+.time {
+  color: #939CAD;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (min-width:1440px) {
+  .notif {
+    gap: 19px;
+    width: 670px;
+    margin-bottom: 8px;
+  }
+
+  .pfp {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    margin: 18px 0 0 20px;
+  }
+
+  .content {
+    gap: 4px;
+    margin: 18px 0;
+  }
+
+  .name,
+  .text,
+  .post,
+  .group {
+    font-size: 16px;
+  }
+
+  .message {
+    margin-top: 13px;
+    width: 566px;
+    height: 97px;
+    padding: 17px 20px 20px;
+    font-size: 16px;
+  }
+
+  .ig {
+    width: 45px;
+    height: 45px;
+    margin-left: 176px;
+  }
+
+  .notif-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .time {
+    font-size: 16px;
+  }
+}
